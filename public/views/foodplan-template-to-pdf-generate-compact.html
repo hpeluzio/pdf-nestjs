@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<head>
+	<title>Student's profile</title>
+	<head>
+	<style type="text/css">
+		body{
+			/* width: 1200px; */
+			display: block;
+			background: white;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height: 24px;
+			font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+			/* color: #222222; */
+		}
+		.report-header{
+			display: block;
+			background: white;
+			color: white;
+			/* position: relative; */
+		}
+		.report-header .logo{
+			/* position: absolute; */
+			margin: 0px;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 150px;
+		}
+		
+		.report-body{
+			width: 100%;
+			display: inline-block;
+			position: relative;
+			padding: 15px;
+			box-sizing: border-box;
+			vertical-align: top;
+		}
+		.report-photo{
+			width: 28%;
+			display: inline-block;
+			position: relative;
+			vertical-align: top;
+			box-sizing: border-box;
+			margin-top: 15px;
+		}
+		.report-body .info p{
+			/* border: #ccc solid 1px; */
+			padding: 5px;
+			display: block;
+			position: relative;
+		}
+		.report-body .info-patient {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			background: white;
+			/* border: #ccc solid 1px; */
+			padding: 5px;
+			position: relative;
+		}
+		.patient-label {
+			font-weight: bold;
+			color: #1B98D0;
+		}
+		.patient-name {
+			font-weight: bold;
+		}
+		.print-date-label {
+			font-weight: bold;
+			color: #1B98D0;
+		}
+		.print-date-name {
+			font-weight: bold;
+		}
+		.table-header {
+			width: 100%;
+			/* background: white; */
+			/* border: #ccc solid 3px; */
+			padding: 5px;
+			/* position: relative; */
+		}
+		.meal-header {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+
+			justify-content: center;
+			/* background: #1B98D0; */
+			color: #222222;
+			border: #222222 solid 1px;
+			padding: 5px;
+			
+			/* position: relative; */
+		}
+		.report-footer{
+			/* background: #1B98D0; */
+			color: #222222;
+			justify-content: center;
+			padding: 15px;
+			font-size: 12px;
+			box-sizing: border-box;
+			display: block;
+			position: relative;
+		}
+	</style>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="report-header">
+		<img src="https://www.formget.com/wp-content/uploads/2018/03/top-bar2.png" class="logo">
+	</div>
+	<div class="report-body">
+		<div class="info-patient">
+			<div><span class="patient-label">Paciente:</span> <span class="patient-name">{{user.fullname}}</span> </div>
+			<div><span class="patient-label">Data da impressão:</span> <span class="patient-name"> 01/12/2022</span> </div>
+		</div>
+		
+		
+
+		<table class="table-header"> 
+			<tr>
+			  <th class="meal-header">Almoço - 12:00</th>
+			</tr>
+			<tr>
+			  <td>Arroz 7 grãos, cozido 1 colher(es) de sopa rasa(s) (15 g)</td>
+			</tr>
+			<tr>
+			  <td>Filé de abadejo grelhado 1 filé(s) pequeno(s) (75 g)</td>
+			</tr>
+			<tr>
+			  <td>Ervilha em grão, cozida 2.5 colher(es) de servir/arroz (95 g)</td>
+			</tr>
+			
+		  </table>
+	</div>
+	<!-- <div class="report-photo">
+		<img src="student.png">
+	</div> -->
+	<div class="report-footer">
+		Qualquer uso, cópia, retenção ou divulgação por qualquer pessoa que não seja o destinatário pretendido é estritamente proibido.
+	</div>
+</body>
+</html>
